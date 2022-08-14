@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Sample</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Sample</th>
+			<th>Sample 2</th>
+			<th>Sample 3</th>
+		</tr>
+		<tr th:each ="room:${rooms}">
+			<td th:text= "${room.number}">number</td>
+			<td th:text= "${room.name}">name</td>
+			<td th:text= "${room.address}">address</td>
+		</tr>
+			<tr th:each ="staff:${staffs}">
+			<td th:text= "${staff.id}">number</td>
+			<td th:text= "${staff.fname}">number</td>
+		</tr>
+
+	</table>
+</body>
+</html>
